@@ -1,11 +1,8 @@
 #ifndef _DATA_FILE_IPP_
 #define _DATA_FILE_IPP_
 
-std::vector<byte_t> load(const char file_name[]) noexcept(false)
+std::vector<byte_t> load(const std::string& file_name) noexcept(false)
 {
-    if (file_name == nullptr)
-        throw "Invalid file name";
-
     std::ifstream file(file_name, std::ios::binary);
 
     if (!file.is_open())
@@ -25,11 +22,8 @@ std::vector<byte_t> load(const char file_name[]) noexcept(false)
     return data;
 }
 
-void save(const std::vector<byte_t>& data, const char file_name[]) noexcept(false)
+void save(const std::vector<byte_t>& data, const std::string& file_name) noexcept(false)
 {
-    if (file_name == nullptr)
-        throw "Invalid file name";
-
     std::ofstream file(file_name, std::ios::binary);
 
     if (!file.is_open())
