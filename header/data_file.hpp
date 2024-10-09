@@ -13,6 +13,16 @@
 */
 std::vector<byte_t> load(const char[]) noexcept(false);
 
+/**
+ * @brief Save file (rle)
+ * @param data Data
+ * @param name File name
+ * @throw Invalid file name
+ * @throw File did not open
+ * @throw File is not good
+*/
+void save(const std::vector<byte_t>&, const char[]) noexcept(false);
+
 // Implementation file
 #include "../src/data_file.ipp"
 
