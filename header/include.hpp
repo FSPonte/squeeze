@@ -22,4 +22,10 @@ enum algorithm_t
     _rle
 };
 
+union buffer_mmap
+{
+    byte_t byte[4];
+    size_t size;
+};
+
 #endif // _INCLUDE_HPP_
