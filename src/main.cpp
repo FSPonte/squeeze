@@ -33,9 +33,10 @@ int main(int argc, char* argv[])
     if (argc == 2 && !std::strcmp(argv[1], "--help"))
     {
         std::cout
-            << "--list         Show all the possible algorithms\n"
-            << "--comp         Compress the file\n"
-            << "--decomp       Revert the compression process\n"
+            << "--list         Show all the possible algorithms\n\n"
+            << "Processes:\n"
+            << "\t--comp         Compress the file\n"
+            << "\t--decomp       Revert the compression process\n\n"
             << "Syntax: squeeze [process] [algorithm] [file 1] [file 2] ...\n";
         
         return 0;
