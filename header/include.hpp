@@ -1,6 +1,7 @@
 #ifndef _INCLUDE_HPP_
 #define _INCLUDE_HPP_
 
+#include <cmath>
 #include <vector>
 #include <fstream>
 
