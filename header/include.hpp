@@ -7,6 +7,8 @@
 typedef char byte_t;
 typedef unsigned long size_t;
 
+const size_t BUFFER_SIZE = 1024;
+
 enum process_t
 {
     _invalid,
