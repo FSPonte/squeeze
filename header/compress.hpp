@@ -5,10 +5,10 @@
 
 /**
  * @brief Run-length encoding
- * @param dat Data vector
- * @return Compressed data vector
+ * @param data Raw data
+ * @return Compressed data
 */
-std::vector<std::pair<byte_t, size_t>> rle(const std::vector<byte_t>&) noexcept(true);
+std::vector<byte_t> rle(const std::vector<byte_t>&) noexcept(true);
 
 #include "../src/compress.ipp"
 

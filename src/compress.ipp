@@ -1,27 +1,28 @@
 #ifndef _COMPRESS_IPP_
 #define _COMPRESS_IPP_
 
-std::vector<std::pair<byte_t, size_t>> rle(const std::vector<byte_t>& input) noexcept(true)
+std::vector<byte_t> rle(const std::vector<byte_t>& data) noexcept(true)
 {
-    std::vector<std::pair<byte_t, size_t>> encoded;
+    std::vector<byte_t> ret;
     size_t
-        size = input.size(),
+        size = data.size(),
         count;
 
     for (size_t i = 0; i < size; ++i)
     {
         count = 1;
 
-        while (i < size - 1 && input[i] == input[i + 1]) 
+        while (i < size - 1 && data[i] == data[i + 1]) 
         {
             ++count;
             ++i;
         }
 
-        encoded.push_back(std::make_pair(input[i], count));
+        ret.push_back(data[i]);
+        ret.push_back(count);
     }
 
-    return encoded;
+    return ret;
 }
 
 #endif // _COMPRESS_IPP_
