@@ -7,7 +7,14 @@
 typedef char byte_t;
 typedef unsigned long size_t;
 
-enum compress_type
+enum process_t
+{
+    _invalid,
+    _compress,
+    _decompress
+};
+
+enum algorithm_t
 {
     _none,
     _rle
