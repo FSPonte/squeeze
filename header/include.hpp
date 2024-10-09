@@ -24,8 +24,8 @@ enum algorithm_t
 
 union buffer_mmap
 {
-    byte_t byte[4];
     size_t size;
+    byte_t byte[sizeof(size_t)];
 };
 
 #endif // _INCLUDE_HPP_
