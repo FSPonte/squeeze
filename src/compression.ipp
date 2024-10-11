@@ -1,7 +1,7 @@
 #ifndef _COMPRESS_IPP_
 #define _COMPRESS_IPP_
 
-namespace compress
+namespace encoding
 {
     std::vector<byte_t> rle(const std::vector<byte_t>& data) noexcept(true)
     {
@@ -34,7 +34,7 @@ namespace compress
     }
 }
 
-namespace decompress
+namespace decoding
 {
     std::vector<byte_t> rle(const std::vector<byte_t>& data) noexcept(true)
     {

@@ -3,7 +3,7 @@
 
 #include "include.hpp"
 
-namespace compress
+namespace encoding
 {
     /**
      * @brief Run-length encoding
@@ -13,7 +13,7 @@ namespace compress
     std::vector<byte_t> rle(const std::vector<byte_t>&) noexcept(true);
 }
 
-namespace decompress
+namespace decoding
 {
     /**
      * @brief Run-length decoding
@@ -23,6 +23,6 @@ namespace decompress
     std::vector<byte_t> rle(const std::vector<byte_t>&) noexcept(true);
 }
 
-#include "../src/compress.ipp"
+#include "../src/compression.ipp"
 
 #endif // _COMPRESS_HPP_
