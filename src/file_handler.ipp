@@ -1,5 +1,5 @@
-#ifndef _DATA_FILE_IPP_
-#define _DATA_FILE_IPP_
+#ifndef _FILE_HANDLER_IPP_
+#define _FILE_HANDLER_IPP_
 
 std::vector<byte_t> load(const std::string& file_name) noexcept(false)
 {
@@ -40,4 +40,4 @@ void save(const std::vector<byte_t>& data, const std::string& file_name) noexcep
     file.close();
 }
 
-#endif // _DATA_FILE_IPP_
+#endif // _FILE_HANDLER_IPP_

@@ -1,5 +1,5 @@
-#ifndef _DATA_FILE_HPP_
-#define _DATA_FILE_HPP_
+#ifndef _FILE_HANDLER_HPP_
+#define _FILE_HANDLER_HPP_
 
 #include "include.hpp"
 
@@ -22,6 +22,6 @@ std::vector<byte_t> load(const std::string&) noexcept(false);
 void save(const std::vector<byte_t>&, const std::string&) noexcept(false);
 
 // Implementation file
-#include "../src/data_file.ipp"
+#include "../src/file_handler.ipp"
 
-#endif // _DATA_FILE_HPP_
+#endif // _FILE_HANDLER_HPP_
