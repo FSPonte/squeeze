@@ -1,5 +1,5 @@
-#ifndef _COMPRESS_HPP_
-#define _COMPRESS_HPP_
+#ifndef _COMPRESSION_HPP_
+#define _COMPRESSION_HPP_
 
 #include "include.hpp"
 
@@ -25,4 +25,4 @@ namespace decoding
 
 #include "../src/compression.ipp"
 
-#endif // _COMPRESS_HPP_
+#endif // _COMPRESSION_HPP_

@@ -1,5 +1,5 @@
-#ifndef _COMPRESS_IPP_
-#define _COMPRESS_IPP_
+#ifndef _COMPRESSION_IPP_
+#define _COMPRESSION_IPP_
 
 namespace encoding
 {
@@ -54,4 +54,4 @@ namespace decoding
     }
 }
 
-#endif // _COMPRESS_IPP_
+#endif // _COMPRESSION_IPP_
