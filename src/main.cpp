@@ -2,8 +2,8 @@
 #include <cstring>
 
 // Data compression functions
-#include "../header/data_file.hpp"
-#include "../header/compress.hpp"
+#include "../header/file_handler.hpp"
+#include "../header/compression.hpp"
 
 /**
  * @brief Print a error message
@@ -79,12 +79,12 @@ int main(int argc, char* argv[])
 
             if (process_type == process_t::_compress)
             {
-                data_pro = compress::rle(data_raw);
+                data_pro = encoding::rle(data_raw);
                 file_name += ".bin";
             }
             else
             {
-                data_pro = decompress::rle(data_raw);
+                data_pro = decoding::rle(data_raw);
                 file_name.resize(file_name.size() - 4);
             }
 
