@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
             file_name = argv[i];
             data_raw = load(file_name);
 
-            if (process_type == process_t::_compress)
+            if (process_type == process_t::_encode)
             {
                 data_pro = encoding::rle(data_raw);
                 file_name += ".bin";
@@ -115,9 +115,9 @@ void err_msg(const char msg[]) noexcept(true)
 process_t get_process_type(const char arg[]) noexcept(true)
 {
     if (!std::strcmp(arg, "--comp"))
-        return process_t::_compress;
+        return process_t::_encode;
     if (!std::strcmp(arg, "--decomp"))
-        return process_t::_decompress;
+        return process_t::_decode;
 
     return process_t::_invalid;
 }
