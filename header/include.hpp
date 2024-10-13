@@ -9,6 +9,7 @@ typedef char byte_t;
 typedef unsigned long size_t;
 
 const size_t BUFFER_SIZE = 1024; // Maximum size of a buffer
+const double PI = 3.14159265358979323846; // Pi constant
 
 // Process data type
 enum process_t
