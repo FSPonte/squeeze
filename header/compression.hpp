@@ -11,6 +11,13 @@ namespace encoding
      * @return Compressed data
     */
     std::vector<byte_t> rle(const std::vector<byte_t>&) noexcept(true);
+
+    /**
+     * @brief Discrete cosine transform
+     * @param data Raw data
+     * @return Compressed data
+    */
+    std::vector<byte_t> dct(const std::vector<byte_t>&) noexcept(true);
 }
 
 namespace decoding
@@ -21,6 +28,13 @@ namespace decoding
      * @return Decompressed data
     */
     std::vector<byte_t> rle(const std::vector<byte_t>&) noexcept(true);
+
+    /**
+     * @brief Discrete cosine transform
+     * @param data Compressed data
+     * @return Decompressed data
+    */
+    std::vector<byte_t> dct(const std::vector<byte_t>&) noexcept(true);
 }
 
 #include "../src/compression.ipp"
