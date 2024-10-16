@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
 
             data_pro = function_matrix[process_type][algorithm_type](data_raw);
             save(data_pro, file_name);
-            std::cout << "File: " << argv[i + 2] << " > " << file_name << '\n';
+            std::cout << "squeeze: " << argv[i + 2] << " > " << file_name << '\n';
         }
         catch (const char exception_message[])
         {
@@ -78,7 +78,7 @@ int main(int argc, char* argv[])
         data_pro.clear();
     }
 
-    std::cout << std::endl;
+    std::cout << std::flush;
 
     return 0;
 }
