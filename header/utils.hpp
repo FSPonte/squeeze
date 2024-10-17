@@ -7,28 +7,41 @@
 /**
  * @brief Print a error message
  * @param msg Message
+ * @throw Error message is a null pointer
 */
-void err_msg(const char[]) noexcept(true);
+void err_msg(const char[]) noexcept(false);
 
 /**
  * @brief Print a exception message
  * @param msg Message
+ * @throw Exception message is a null pointer
 */
-void exc_msg(const char[]) noexcept(true);
+void exc_msg(const char[]) noexcept(false);
+
+/**
+ * @brief Print a log message
+ * @param in_f_name Name of input file
+ * @param out_f_name Name of output file
+ * @throw Input file name is a null pointer
+ * @throw Output file name is a null pointer
+*/
+void log_msg(const char[], const char[]) noexcept(false);
 
 /**
  * @brief Get process
  * @param arg Argument
  * @return Process type
+ * @throw Process type string is a null pointer
 */
-process_t get_process_type(const char[]) noexcept(true);
+process_t get_process_type(const char[]) noexcept(false);
 
 /**
  * @brief Get algorithm
  * @param arg Argument
  * @return Compression type
+ * @throw Algorithm type string is a null pointer
 */
-algorithm_t get_algorithm_type(const char[]) noexcept(true);
+algorithm_t get_algorithm_type(const char[]) noexcept(false);
 
 // Implementation file
 #include "../src/utils.ipp"
