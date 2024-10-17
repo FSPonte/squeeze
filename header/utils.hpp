@@ -19,15 +19,6 @@ void err_msg(const char[]) noexcept(false);
 void exc_msg(const char[]) noexcept(false);
 
 /**
- * @brief Print a log message
- * @param in_f_name Name of input file
- * @param out_f_name Name of output file
- * @throw Input file name is a null pointer
- * @throw Output file name is a null pointer
-*/
-void log_msg(const char[], const char[]) noexcept(false);
-
-/**
  * @brief Get process
  * @param arg Argument
  * @return Process type

@@ -21,17 +21,6 @@ void exc_msg(const char msg[]) noexcept(false)
     std::cout << "squeeze exception: " << msg << '\n';
 }
 
-void log_msg(const char in_file_name[], const char out_file_name[]) noexcept(false)
-{
-    if (in_file_name == nullptr)
-        throw "Input file name is a null pointer";
-
-    if (out_file_name == nullptr)
-        throw "Output file name is a null pointer";
-
-    std::cout << "squeeze log: " << in_file_name << " > "  << out_file_name << '\n';
-}
-
 process_t get_process_type(const char arg[]) noexcept(false)
 {
     if (arg == nullptr)
